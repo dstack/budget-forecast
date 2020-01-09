@@ -1,3 +1,7 @@
+# App Specific
+personas/*.**
+!personas/default.yml
+
 # Logs
 logs
 *.log

@@ -1,0 +1,44 @@
+name: "John Doe"
+dailyBudget: 20
+accounts:
+  - type: "savings"
+    balance: 100
+    threshold: 10
+    name: "My Savings Acct"
+  - type: "checking"
+    balance: 200
+    threshold: 20
+    name: "My Checking Acct"
+  - type: "retirement"
+    balance: 1000
+    name: "401K"
+  - type: "brokerage"
+    balance: 400
+    name: "Trading Acct"
+recurring:
+  incomes:
+    - startDate: "01-03-2020"
+      type: "bi-weekly"
+      ammt: 500
+      desc: "My Paycheck"
+      dist:
+        - target: "My Savings Acct"
+          ammt: 50
+    - startDate: "01-01-2020"
+      type: "monthly"
+      ammt: 100
+      desc: "Twitch Subs"
+  expenses:
+    - startDate: "01-17-2020"
+      ammt: 35
+      desc: "Phone Bill"
+    - startDate: "01-01-2020"
+      ammt: 300
+      desc: "Rent"
+events:
+  - name: "One Time Bonus"
+    ammt: 1000
+    date: "01-25-2020"
+  - name: "Loan Due"
+    ammt: -250
+    date: "01-28-2020"
